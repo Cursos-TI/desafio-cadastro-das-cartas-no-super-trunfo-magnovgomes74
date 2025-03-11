@@ -1,9 +1,8 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo Nível Básico - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
+// Desafio Super Trunfo Nível Aventureiro - Países
+// Tema 1 - Incrementando o Cadastro das Cartas
+
 
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
@@ -16,6 +15,9 @@ int main() {
     float area;
     float pib;
     int pt_turisticos;
+    float densidade_popu;
+    float pib_perCapita;
+
     
     // Cadastro da Carta 1:
     printf("Dados da Carta 1\n");
@@ -36,16 +38,24 @@ int main() {
     scanf(" %d", &populacao);
 
     printf("Insira a área da cidade: ");
-    scanf(" %f", &area);
+    scanf(" %f",&area);
 
     printf("Insira o PIB da cidade: ");
-    scanf(" %f", &pib);
+    scanf("%f", &pib);
 
     printf("Quantos pontos turísticos tem na cidade? ");
     scanf("%d", &pt_turisticos);
 
 
-    // Exibição dos Dados da Carta 1:
+    //Usando operadores matemáticos para para realizar o nível Aventureiro do jogo;
+   
+    densidade_popu = populacao / area;
+    pib *= 1000000000.0;// Unica forma que achei para converter o valor de pib para bilhões;
+    pib_perCapita = pib / populacao;    
+
+
+    /* Exibição dos Dados da Carta 1 com o incremento de duas variáveis, após
+    usar operadores matematicos*/
     printf("\nCarta 1:\n");
 
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
@@ -57,8 +67,10 @@ int main() {
     printf("População: %d habitantes\n", populacao);
     printf("Área: %.2f km2\n", area);
     printf("PIB: %.2f bilhões de reais\n", pib);
-    printf("Número de Pontos Turísticos: %d\n\n", pt_turisticos);
-
+    printf("Número de Pontos Turísticos: %d\n", pt_turisticos);
+    printf("Densidade populacional: %.2f hab./km2\n", densidade_popu);
+    printf("PIB per Capita R$: %.2f\n\n", pib_perCapita);
+     
 
     //Cadastro da Carta 2;
     printf("\nDados da Carta 2\n");
@@ -81,23 +93,35 @@ int main() {
     scanf(" %f", &area);
 
     printf("Insira o PIB da cidade: ");
-    scanf(" %f", &pib);
+    scanf("%f", &pib);
 
     printf("Quantos pontos turísticos tem na cidade? ");
     scanf("%d", &pt_turisticos);
- 
+
+
+    //Usando operadores matemáticos para realizar o nível Aventureiro do jogo;
+
+    densidade_popu = populacao / area;
+    pib *= 1000000000.0; // Unica forma que achei para converter o valor de pib para bilhões;
+    pib_perCapita = pib / populacao;     
+    
+
     // Exibição dos Dados da Carta 2:
     printf("\nCarta 2:\n");
 
-    //imprimindo dos dados da Carta 2;
+    /* Exibição dos Dados da Carta 2 com o incremento de duas variáveis, após
+    usar operadores matematicos*/
 
     printf("Estado: %s\n", estado);
     printf("Código: %s\n", codigo);
     printf("Nome da cidade: %s\n", cidade);
-    printf("População: %d habitantes\n", populacao);
+    printf("População: %d\n habitantes", populacao);
     printf("Área: %.2f km2\n", area);
     printf("PIB: %.2f bilhões de reais\n", pib);
-    printf("Número de Pontos Turísticos: %d\n\n", pt_turisticos);   
+    printf("Número de Pontos Turísticos: %d\n", pt_turisticos);
+    printf("Densidade populacional: %.2f hab./km2\n", densidade_popu);
+    printf("PIB per Capita R$: %.2f\n\n", pib_perCapita);  
+
 
     return 0;
 }
