@@ -46,21 +46,6 @@ int main() {
     scanf("%d", &pt_turisticos1);
 
 
-    // Exibição dos Dados da Carta 1:
-    printf("\nCarta 1:\n");
-
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-
-    printf("Estado: %s\n", estado1);
-    printf("Código: %s\n", codigo1);
-    printf("Nome da cidade: %s\n", cidade1);
-    printf("População: %d habitantes\n", populacao1);
-    printf("Área: %.2f km2\n", area1);
-    printf("PIB: %.2f bilhões de reais\n", pib1);
-    printf("Número de Pontos Turísticos: %d\n\n", pt_turisticos1);
-
-
     //Cadastro da Carta 2;
     printf("\nDados da Carta 2\n");
 
@@ -86,6 +71,20 @@ int main() {
 
     printf("Quantos pontos turísticos tem na cidade? ");
     scanf("%d", &pt_turisticos2);
+
+
+
+    // Exibição dos Dados da Carta 1:
+    printf("\nCarta 1:\n");
+
+    printf("Estado: %s\n", estado1);
+    printf("Código: %s\n", codigo1);
+    printf("Nome da cidade: %s\n", cidade1);
+    printf("População: %d habitantes\n", populacao1);
+    printf("Área: %.2f km2\n", area1);
+    printf("PIB: %.2f bilhões de reais\n", pib1);
+    printf("Número de Pontos Turísticos: %d\n\n", pt_turisticos1);    
+
  
     // Exibição dos Dados da Carta 2:
     printf("\nCarta 2:\n");
@@ -99,7 +98,6 @@ int main() {
     printf("Área: %.2f km2\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n\n", pt_turisticos2); 
-
 
     return 0;
 }
