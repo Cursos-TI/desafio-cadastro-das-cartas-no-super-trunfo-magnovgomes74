@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo Nível Aventureiro - Países
+// Desafio Super Trunfo Nível Mestre - Países
 // Tema 1 - Incrementando o Cadastro das Cartas
 
 
@@ -11,12 +11,13 @@ int main() {
     char estado[50];
     char codigo[20];
     char cidade[50];
-    int populacao;
+    unsigned long int populacao;
     float area;
     float pib;
     int pt_turisticos;
     float densidade_popu;
     float pib_perCapita;
+
 
     
     // Cadastro da Carta 1:
@@ -35,7 +36,7 @@ int main() {
     scanf("%s", &cidade);
 
     printf("Insira a população desta cidade: ");
-    scanf(" %d", &populacao);
+    scanf(" %lu", &populacao);
 
     printf("Insira a área da cidade: ");
     scanf(" %f",&area);
