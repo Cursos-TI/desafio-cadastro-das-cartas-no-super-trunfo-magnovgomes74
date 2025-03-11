@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo Nível Intermediário - Países
-// Tema 2 - Incrementando o Cadastro das Cartas
+// Desafio Super Trunfo Nível Aventureiro - Países
+// Tema 1 - Incrementando o Cadastro das Cartas
 
 
 int main() {
@@ -46,10 +46,11 @@ int main() {
     printf("Quantos pontos turísticos tem na cidade? ");
     scanf("%d", &pt_turisticos);
 
+
     //Usando operadores matemáticos para para realizar o nível Aventureiro do jogo;
    
     densidade_popu = populacao / area;
-    pib *= 1000000000.0;
+    pib *= 1000000000.0;// Unica forma que achei para converter o valor de pib para bilhões;
     pib_perCapita = pib / populacao;    
 
 
@@ -97,10 +98,11 @@ int main() {
     printf("Quantos pontos turísticos tem na cidade? ");
     scanf("%d", &pt_turisticos);
 
+
     //Usando operadores matemáticos para realizar o nível Aventureiro do jogo;
 
     densidade_popu = populacao / area;
-    pib *= 1000000000.0;
+    pib *= 1000000000.0; // Unica forma que achei para converter o valor de pib para bilhões;
     pib_perCapita = pib / populacao;     
     
 
