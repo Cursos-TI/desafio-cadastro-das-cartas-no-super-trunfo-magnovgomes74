@@ -75,7 +75,7 @@ int main() {
 
 
     // Exibição dos Dados da Carta 1:
-    printf("\nCarta 1:\n");
+    printf("\nCarta 1: A01\n\n");
 
     printf("Estado: %s\n", estado1);
     printf("Código: %s\n", codigo1);
@@ -87,7 +87,7 @@ int main() {
 
  
     // Exibição dos Dados da Carta 2:
-    printf("\nCarta 2:\n");
+    printf("\nCarta 2: B02\n\n");
 
     //imprimindo dos dados da Carta 2;
 
