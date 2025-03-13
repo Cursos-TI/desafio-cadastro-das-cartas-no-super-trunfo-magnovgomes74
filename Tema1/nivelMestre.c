@@ -21,7 +21,7 @@ int main() {
 
     
     // Cadastrando a Carta 1:
-    printf("Dados da Carta 1\n");
+    printf("Dados da Carta 1: A01\n\n");
 
     //solicitando ao usuário os dados da Carta 1;    
 
@@ -48,7 +48,7 @@ int main() {
   
 
     //Cadastro da Carta 2;
-    printf("\nDados da Carta 2\n");
+    printf("\nDados da Carta 2: B02\n\n");
 
     //solicitando ao usuário os dados da Carta 2;
 
@@ -88,9 +88,10 @@ int main() {
 
     super_poder2 = populacao2 + area2 + pib2 + pt_turisticos2 + densidade_popu2 + pib_perCapita2;
 
+
     // Impressão das comparações entre as cartas no jogo Super Trunfo;
 
-    printf("\nComparação das cartas:\n\n");
+    printf("\nComparação das cartas A01 e B02 do Jogo Super Trunfo:\n\n");
 
     printf("População: Carta %d venceu (%d)\n", populacao1 > populacao2 ? 1 : 2, populacao1 > populacao2);
     printf("Área: Carta %d venceu (%d)\n", area1 > area2 ? 1 : 2, area1 > area2);
@@ -98,7 +99,7 @@ int main() {
     printf("Pontos Turísticos: Carta %d venceu (%d)\n", pt_turisticos1 > pt_turisticos2 ? 1 : 2, pt_turisticos1 > pt_turisticos2);
     printf("Densidade Populacional: Carta %d venceu (%d)\n", densidade_popu1 < densidade_popu2 ? 1 : 2, densidade_popu1 < densidade_popu2);
     printf("PIB per Capita: Carta %d venceu (%d)\n", pib_perCapita1 > pib_perCapita2 ? 1 : 2, pib_perCapita1 > pib_perCapita2);
-    printf("Super Poder: Carta %d venceu (%d)\n\n\n", super_poder1 > super_poder2 ? 1 : 2, super_poder1 > super_poder2);
+    printf("\nSuper Poder: Carta %d venceu (%d)\n\n\n", super_poder1 > super_poder2 ? 1 : 2, super_poder1 > super_poder2);
 
     return 0;
 
