@@ -86,7 +86,7 @@ int main() {
  /* Exibição dos Dados das Cartas 1 e 2 com o incremento de duas variáveis, após
     usar operadores matematicos*/
 
-    printf("\nCarta 1:\n");
+    printf("\nCarta 1: A01\n\n");
 
     printf("Estado: %s\n", estado1);
     printf("Código: %s\n", codigo1);
@@ -99,7 +99,7 @@ int main() {
     printf("PIB per Capita R$: %.2f\n\n", pib_perCapita1);    
     
 
-    printf("\nCarta 2:\n");
+    printf("\nCarta 2: B02\n\n");
 
     printf("Estado: %s\n", estado2);
     printf("Código: %s\n", codigo2);
